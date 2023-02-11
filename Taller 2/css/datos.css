@@ -1,0 +1,154 @@
+
+.titulo{
+    display:flex ;
+   align-items: center;
+   justify-content: center;
+    font-size: 30px;
+    flex-wrap: wrap;
+}
+/* 
+h2 {
+   font-size: 50px;
+} */
+
+
+.logouis{
+   height: 100px;
+   width: 200px;
+   margin: 15px;
+   padding: 10px;
+}
+
+body{
+    background-color: whitesmoke;  /* controla lo largo de la pagina */
+    font-family: 'Titillium Web', sans-serif;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap
+}
+
+
+.contenedor{
+   flex-direction: column;
+   align-items: center;
+   align-content: center;
+   display: flex;
+   justify-content: space-around;
+}
+
+
+.datos{
+   flex-direction:row;
+   margin-top: 10vh;
+   color: black;
+   display: flex;
+   align-content: baseline;
+   gap: 15px;
+   padding-right: 50px;
+ }
+
+.contra{
+   color: black;
+   flex-direction: row;
+   width:max-content;
+   display: flex;
+   align-content: center;
+   align-items: center;
+   justify-content: space-between;
+}
+
+input{
+    padding: 10px;
+    background: #E6F9FF;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    border-style: solid;
+    border-color: beige;
+    text-align-last: center; 
+}
+
+.identi{
+   margin-top: 20px;
+   
+}
+
+fieldset{
+   border-radius: 20px;
+   margin-bottom: 10px;
+    border-style: solid;
+    border-color: gold;
+    display: flex;
+    flex-direction: column;
+
+}
+.botones{
+   display: flex;
+   align-content: center;
+   justify-content: space-evenly;
+   width: 100%;
+   float: left;
+   max-width : 1280px;
+   margin: auto;
+}
+
+select{
+    padding: 10px;
+   background: #E6F9FF;
+   border-radius: 20px;
+   margin-bottom: 10px;
+    border-style: solid;
+    border-color: rgb(14, 81, 204);
+   text-align-last: center;  
+}
+textarea{
+   padding: 10px;
+   background: #E6F9FF;
+   border-radius: 20px;
+   margin-bottom: 10px;
+    border-style: solid;
+    border-color: rgb(14, 81, 204);
+   text-align-last: center; 
+}
+
+.final{
+   font-family: 'Titillium Web', sans-serif;
+
+   color: black;
+   background: yellow       ;
+   border-style: solid;
+   border-width: 1px;
+   border-color: rgb(14, 81, 204);
+   border-radius: 20px;
+   max-width : 1280px;
+   width: 15%;
+   font-size: 80%;
+}
+
+.ppe{
+   display: flex;
+   align-content: center;
+   justify-content: space-evenly;
+   width: 75%;
+   float: left;
+   max-width : 1280px;
+   margin: auto;
+   position: absolute;
+   
+}
+
+.menu{
+   font-family: 'Titillium Web', sans-serif;
+   color: black;
+   background: yellow;
+   border-style: solid;
+   border-radius: 10px;
+   border-width: 2px;
+   border-color: black;
+   padding: 2px;
+   position: relative;
+   font-size: 10;
+   text-decoration: none;
+}
+.hola{
+    background-color: cyan;
+}

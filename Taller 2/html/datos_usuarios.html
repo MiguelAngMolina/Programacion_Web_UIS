@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos usuario</title>
+    <link rel="stylesheet" href="../css/datos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <form>  
+            <div class="titulo">
+            <h2>Rellena tu Hoja de vida</h2>
+            
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Universidad_Industrial_de_Santander_logo.svg/2560px-Universidad_Industrial_de_Santander_logo.svg.png" class="logouis">
+            </div>
+        <div class="contenedor">
+            <div class="datos">
+                <label>Nombre: </label> <input type="text" placeholder="Escriba su nombre" required> 
+                <br>
+                <label>Apellidos:  </label> <input type="text" placeholder="Escriba su apellido" required>
+            </div>
+            <div class="contra">
+                <label>Contraseña:  </label><input type="password" placeholder="Digite una contraseña" required>
+                <br>
+                <label>Confirmar contraseña:</label><input type="password" placeholder="Confirme su contraseña" required>
+            </div>
+        </div>
+        <div class="identi">
+        <label>Identificacion</label>
+        
+        <select>
+            <option value="CC">CC</option>
+            <option value="TI">TI</option>
+            <option value="CE">CE</option>
+        </select>
+        </div>
+    
+        <fieldset>
+            <legend>Seleccion su sexo</legend>
+            <input type="radio" id="hombre" name="contact" required>
+            <label for="hombre">Hombre</label><br>
+            <input type="radio" id="mujer" name="contact" required>
+            <label for="mujer">Mujer</label><br>
+            <input type="radio" id="otro" name="contact" required>
+            <label for="otro">Otro</label>
+        </fieldset>
+
+       
+        <fieldset>
+        <legend>Datos personales</legend>
+        <div>
+            <label>Departamento</label>
+            <select required class="hola">
+                <option value="Amazonas">Amazonas</option>
+                <option value="Antioquia">Antioquia</option>
+                <option value="Arauca">Arauca</option>
+                <option value="Atlántico">Atlántico</option>
+                <option value="Bolívar">Bolívar</option>
+                <option value="Boyacá">Boyacá</option>
+                <option value="Caldas">Caldas</option>
+                <option value="Caquetá">Caquetá</option>
+                <option value="Casanare">Casanare</option>
+                <option value="Cauca">Cauca</option>
+                <option value="Cesar">Cesar</option>
+                <option value="Chocó">Chocó</option>
+                <option value="Cundinamarca">Cundinamarca</option>
+                <option value="Guainía">Guainía</option>
+                <option value="Guaviare">Guaviare</option>
+                <option value="Huila">Huila</option>
+                <option value="Guajira">Guajira</option>
+                <option value="Magdalena">Magdalena</option>
+                <option value="Meta">Meta</option>
+                <option value="Nariño">Nariño</option>
+                <option value="Norte de Santander">Norte de Santander</option>
+                <option value="Putumayo">Putumayo</option>
+                <option value="Quindío">Quindío</option>
+                <option value="Risaralda">Risaralda</option>
+                <option value="San Andrés y Providencia">San Andrés y Providencia</option>
+                <option value="Santander">Santander</option>
+                <option value="Sucre">Sucre</option>
+                <option value="Tolima">Tolima</option>
+                <option value="Valle del Cauca">Valle del Cauca</option>
+                <option value="Vaupés">Vaupés</option>
+
+            </select>
+        </div>
+            <label>Edad: </label><input required type="number" placeholder=" Escribe tu edad"><br>
+            <label> Fecha de Nacimiento: </label><input required type="date" placeholder=" Dia de Nacimiento">
+            <br>
+            <label>Temas de interes</label><br>
+            <textarea name="Temas de interes: " rows="5" ></textarea> 
+        </fieldset>
+        <div class="botones">
+            <input  class="final" type="submit" value="Guardar cambios">
+            <input class="final" type="submit" value="Borrar datos introducidos">
+            
+        </div>
+         <div class="ppe">   
+        <br>
+        <a href="menu.html" class="menu">MENU</a>     
+    </div> 
+        <br>
+    </form>
+    
+</body>
+</html>
