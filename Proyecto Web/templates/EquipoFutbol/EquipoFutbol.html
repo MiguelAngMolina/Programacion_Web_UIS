@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block headers %}
+<title>Tipo Documento</title>
+{% endblock %}
+
+{% block content %}
+<div class="container lista">
+    <h1 class="text-center">Lista de Equipos</h1>
+    <p>Aquí se muestra una lista de Equipos para realizar el CRUD.</p>
+    <ul class="list-group">
+        {% for Equipos in EquipoFutbol %} 
+        <li style="background-color: whitesmoke;" class="list-group-item">
+            {{ Equipos.nombre }} &nbsp;<a href="{% url 'EquipoFutbol_view' Equipos.id %}" class="btn btn-sm btn-outline-primary">Detalles</a>&nbsp;
+            <a href="{% url 'EquipoFutbol_actualizar' Equipos.id %}" class="btn btn-sm btn-outline-warning">Actualizar</a>&nbsp;
+            <a href="{% url 'EquipoFutbol_eliminar' Equipos.id %}" class="btn btn-sm btn-outline-danger">Eliminar</a>
+        </li>
+        {% endfor %}
+    </ul>    
+</div>
+
+{% endblock %}

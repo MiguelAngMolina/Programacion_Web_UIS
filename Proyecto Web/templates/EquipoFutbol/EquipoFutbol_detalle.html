@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block headers %}
+<title>Equipo</title>
+{% endblock %}
+
+{% block content %}
+<div class="container detalle">
+  <table style="background-color: whitesmoke;" class="table">
+      <thead>
+        <tr>
+          <th scope="col">Nombre</th>
+          <th scope="col">Pais</th>
+          <th scope="col">Estadio</th>
+          <th scope="col">Ciudad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{ object.nombre }}</td>
+          <td>{{ object.pais }}</td>
+          <td>{{ object.estadio }}</td>
+          <td>{{ object.ciudad.nombre}}</td>
+        </tr>
+        <tr>
+          <th scope="col">Cantidad de titulos</th>
+          <th scope="col">Colores de Equipacion</th>
+          <th scope="col">Fecha de Fundacion</th>
+        </tr>
+        <tr>
+          <td>{{ object.cantidadtitulos }}</td>
+          <td>{{ object.coloresequipacion }}</td>
+          <td>{{ object.fechafundacion }}</td>
+        </tr>
+      </tbody>
+    </table>    
+</div>
+{% endblock %}

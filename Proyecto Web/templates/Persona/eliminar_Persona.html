@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block headers %}
+<title>Delete Persona</title>
+{% endblock %}
+
+{% block content %}
+<div class="container formulario">
+    <form method="POST">
+        <!-- Security token by Django -->
+        {% csrf_token %}
+        ¿Está seguro que desea borrar a esta persona?
+        <br>
+        <br>
+        <input type="submit" class="btn btn-outline-danger" value="Borrar" />
+        <a href="{% url 'Persona' %}">Cancelar</a>
+    </form> 
+</div>
+
+{% endblock %}

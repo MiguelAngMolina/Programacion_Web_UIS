@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block headers %}
+<title>Tipo Documento</title>
+{% endblock %}
+
+{% block content %}
+<div class="container detalle">
+    <table style="background-color: whitesmoke;" class="table">
+        <thead>
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Descripción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{ object.nombre }}</td>
+            <td>{{ object.descripcion }}</td>
+          </tr>
+        </tbody>
+      </table>    
+</div>
+
+{% endblock %}

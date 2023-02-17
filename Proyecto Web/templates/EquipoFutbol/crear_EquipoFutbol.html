@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block headers %}
+<title>New Equipo</title>
+{% endblock %}
+
+{% block content %}
+<div class="container formulario">
+    <h1 class="text-center" style="margin-bottom: 30px;"> Crear nuevo Equipo de Futbol</h1>
+    <form method="POST" enctype="multipart/form-data">
+ 
+        <!-- Security token -->
+        {% csrf_token %}
+     
+        <!-- Using the formset -->
+        {{ form.as_p }}
+         
+        <input type="submit" value="Guardar" class="btn btn-success">
+    </form>   
+</div>
+
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block headers %}
+<title>Persona</title>
+{% endblock %}
+
+{% block content %}
+<div class="container lista">
+    <h1 class="text-center" >Lista de Personas</h1>
+    <p>Aquí se muestra una lista de personas para realizar el CRUD.</p>
+    <ul class="list-group">
+        {% for Persona in Persona %} 
+        <li style="background-color: whitesmoke;" class="list-group-item">
+            {{ Persona.nombre }} &nbsp;<a href="{% url 'Persona_view' Persona.id %}" class="btn btn-sm btn-outline-primary">Detalles</a>&nbsp;
+            <a href="{% url 'Persona_actualizar' Persona.id %}" class="btn btn-sm btn-outline-warning">Actualizar</a>&nbsp;
+            <a href="{% url 'Persona_eliminar' Persona.id %}" class="btn btn-sm btn-outline-danger">Eliminar</a>
+        </li>
+        {% endfor %}
+    </ul>    
+</div>
+
+{% endblock %}

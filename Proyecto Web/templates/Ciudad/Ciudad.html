@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block headers %}
+<title>Tipo Documento</title>
+{% endblock %}
+
+{% block content %}
+<div class="container lista">
+    <h1 class="text-center" >Lista de Ciudades</h1>
+    <p>Aquí se muestra una lista de Ciudades para realizar el CRUD.</p>
+    <ul class="list-group">
+        {% for Ciudades in Ciudad %} 
+        <li style="background-color: whitesmoke;" class="list-group-item">
+            {{ Ciudades.nombre }} &nbsp;<a href="{% url 'Ciudad_view' Ciudades.id %}" class="btn btn-sm btn-outline-primary">Detalles</a>&nbsp;
+            <a href="{% url 'Ciudad_actualizar' Ciudades.id %}" class="btn btn-sm btn-outline-warning">Actualizar</a>&nbsp;
+            <a href="{% url 'Ciudad_eliminar' Ciudades.id %}" class="btn btn-sm btn-outline-danger">Eliminar</a>
+        </li>
+        {% endfor %}
+    </ul>    
+</div>
+
+{% endblock %}
