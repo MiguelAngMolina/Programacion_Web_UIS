@@ -1,0 +1,23 @@
+.header {
+    background-color: #333;
+    color: #181616;
+    padding: 10px;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  /* Estilos para el contenido principal */
+  .content {
+    margin: 20px;
+  }
+  
+  .content h2 {
+    margin: 0 0 10px;
+  }
+  
+  .content p {
+    margin: 0 0 20px;
+  }

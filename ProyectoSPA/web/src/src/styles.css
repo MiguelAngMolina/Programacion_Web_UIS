@@ -1,0 +1,80 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #5f9ea0;
+  }
+
+.caja{
+    width: 1040px;
+    position: center;
+    margin: 0 auto;
+}
+
+
+.titulo-principal{
+
+    text-align: center;
+}
+
+.btn-primary{
+    color: rgb(255, 255, 255);
+}
+
+.btn-success{
+    color: rgb(255, 255, 255);
+}
+
+
+style{
+    margin: 0 auto;
+}
+
+
+
+.container li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    background: #FFFFFF;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 15px;
+
+}
+
+
+
+.button {
+    background-color: #a3bba4; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.btn.btn-primary {
+    background-color: #4b4a43; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.btn.btn-success{
+    background-color: #cf340d; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}

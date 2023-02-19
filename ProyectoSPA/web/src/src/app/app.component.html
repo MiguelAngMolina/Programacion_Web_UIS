@@ -1,0 +1,65 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<br>
+<style>
+  .div {
+      background-color: #1b50ff;
+  }
+  
+  .div-2 {
+    background-color: #ABBAEA;
+  }
+  
+  .div-3 {
+    background-color: #FBD603;
+  }
+</style>
+
+<div style="text-align:center">
+  <h1>
+    Bienvenidos a nuestra página SPA
+  </h1>
+</div>
+<br>
+<div class="container text-center">
+<button (click)="ListarPersona()" class="btn btn-primary" style="margin-right: 10px;">
+  Mostrar Personas
+</button>
+<button (click)="NuevaPersona()" class="btn btn-success">
+  Crear Persona
+</button>
+
+<br>
+<br>
+
+
+&nbsp;
+
+<button (click)="ListarCiudad()" class="btn btn-primary" style="margin-right: 10px;">
+  Mostrar Ciudades
+</button>
+<button (click)="NuevaCiudad()" class="btn btn-success">
+  Crear Ciudad
+</button>
+
+<br>
+<br>
+
+<button mat-stroked-button (click)="ListarTipoDocumento()" class="btn btn-primary" style="margin-right: 10px;">
+  Mostrar Documento
+</button>
+<button (click)="NuevoTipoDocumento()" class="btn btn-success">
+  Crear Documento
+</button>
+</div>
+<br>
+<br>
+
+<router-outlet></router-outlet>
